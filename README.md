@@ -2,7 +2,7 @@
 Can you survive the undead? A thriller, quick and heart-pounding zombie shooting game that challenges your shooting, and moving ability!
 
 ## Demonstration: 
-
+![Alt text](https://github.com/Shirly8/Undead-Uprising/blob/d0423d2f26122141231bb124bdc440b61ae8286f/Zombie%20Game.gif)
 
 ## How to play:
 ### 🧟 Choose your difficulty
