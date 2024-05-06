@@ -1,7 +1,7 @@
 # 🧟‍♂️ UNDEAD UPRISING 🧟‍♀️
 Can you survive the undead? A thriller, quick and heart-pounding zombie shooting game that challenges your shooting, and moving ability!
 
-## Demonstration Video
+## Demonstration: 
 
 
 ## How to play:
@@ -12,7 +12,7 @@ Can you survive the undead? A thriller, quick and heart-pounding zombie shooting
 ### 🏠 The house is your safety
   - A house is spawned in the corner of the game. No zombies are allowed to go there so take a break, reload your guns (PRESS R), wait til it's safe to leave
 ### 💥 SLAUGHTER THE ZOMBIES
-  - Zombies come from all directions - up, down, left and right but you can only shoot left or right (PRESS A OR D TO SHOOT)
+  - Zombies come from all directions - up, down, left, and right but you can only shoot left or right (PRESS A OR D TO SHOOT)
 ### ❤️ YOU ONLY HAVE 5 LIVES
  - Lose them, and you lose the game. So aim carefully, shoot carefully, use your safe spot
 
