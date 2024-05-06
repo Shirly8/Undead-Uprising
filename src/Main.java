@@ -66,9 +66,9 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseMo
         this.bullet = false;
         this.gameover = false;
         this.g1 = new Gun();
-        this.zombiecount = Integer.parseInt(JOptionPane.showInputDialog(null, "WELCOME TO ZOMBIE APOCALYPSE!\n\nHow many zombies would you like to spawn?\n\n(10-20 zombies recommended)", "ZOMBIE APOCALYPSE", 1));
+        this.zombiecount = Integer.parseInt(JOptionPane.showInputDialog(null, "WELCOME TO UNDEAD UPRISING!\n\nHow many zombies would you like to spawn?\n\n(10-20 zombies recommended)", "UNDEAD UPRISING", 1));
         this.m1 = new Zombie[this.zombiecount];
-        this.sectimer = Integer.parseInt(JOptionPane.showInputDialog(null, "WELCOME TO ZOMBIE APOCALYPSE!\n\nPlease enter the speed of the zombie between 50 to 100\n\n(The lower the speed, the faster the zombies go)", "ZOMBIE APOCALYPSE", 1));
+        this.sectimer = Integer.parseInt(JOptionPane.showInputDialog(null, "WELCOME TO UNDEAD UPRISING!\n\nPlease enter the speed of the zombie between 50 to 100\n\n(The lower the speed, the faster the zombies go)", "UNDEAD UPRISING", 1));
         (this.b1 = new Bullets()).drawBullets(this.b1.getX(), this.b1.getY(), 30, 10, Color.RED);
         this.seconds = 3;
         this.timer = new Timer(1000, this);
@@ -89,7 +89,7 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseMo
         final JFrame frame = new JFrame();
         frame.setContentPane(this);
         frame.setSize(1400, 800);
-        frame.setTitle("Zombie APOCALYPSE");
+        frame.setTitle("UNDEAD UPRISING");
         frame.setDefaultCloseOperation(3);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
@@ -101,7 +101,7 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseMo
         final Graphics2D g2 = (Graphics2D)g;
         Font customFont = null;
         try {
-            customFont = Font.createFont(0, new File("Minecraft.ttf")).deriveFont(50.0f);
+            customFont = Font.createFont(0, new File("src/Minecraft.ttf")).deriveFont(50.0f);
             final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             ge.registerFont(customFont);
         }
@@ -319,7 +319,7 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseMo
             if (this.life <= 0) {
                 this.ZombieTimer.stop();
                 this.timer.stop();
-                final int Canceloption = JOptionPane.showConfirmDialog(null, "UNFORTUNATELY, YOU HAVE NO REMAINING LIVES LEFT!\n\nThanks for playing ZOMBIE APOCALYPSE!", "ZOMBIE APOCALYPSE", -1, -1, new ImageIcon("Icon.png"));
+                final int Canceloption = JOptionPane.showConfirmDialog(null, "UNFORTUNATELY, YOU HAVE NO REMAINING LIVES LEFT!\n\nThanks for playing UNDEAD UPRISING!", "UNDEAD UPRISING", -1, -1, new ImageIcon("Icon.png"));
                 if (Canceloption == 0) {
                     System.exit(0);
                 }
@@ -327,7 +327,7 @@ public class Main extends JPanel implements ActionListener, KeyListener, MouseMo
             if (this.zombiecount == 0) {
                 this.ZombieTimer.stop();
                 this.timer.stop();
-                final int Canceloption = JOptionPane.showConfirmDialog(null, "YOU HAVE SUCCESSFULLY SURVIVED AND KILLED ALL THE ZOMBIES!\n\nThanks for playing ZOMBIE APOCALYPSE!", "ZOMBIE APOCALYPSE", -1, -1, new ImageIcon("surivoricon.jpg"));
+                final int Canceloption = JOptionPane.showConfirmDialog(null, "YOU HAVE SUCCESSFULLY SURVIVED AND KILLED ALL THE ZOMBIES!\n\nThanks for playing UNDEAD UPRISING!", "UNDEAD UPRISING", -1, -1, new ImageIcon("surivoricon.jpg"));
                 if (Canceloption == 0) {
                     System.exit(0);
                 }
